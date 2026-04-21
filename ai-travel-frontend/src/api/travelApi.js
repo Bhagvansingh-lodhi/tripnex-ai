@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/travel",
+
+    baseURL: "https://tripnex-ai.onrender.com/api/travel",
+
 });
 
 export const createPlan = (data) => API.post("/plan", data);
